@@ -20,11 +20,11 @@ import StreamsManager from 'redis-streams-manager'
 const blockingConnection = new IORedis()
 const manager = new StreamsManager(blockingConnection)
 // Build a use function
-export const useMyStream = buildUse(manager)('my-stream')
+export const useStream = buildUse(manager)
 
 // somewhere else...
 
-const [events, unsubscribe] = useMyStream()
+const [events, unsubscribe] = useStream('my-stream')
 
 events.on('entry', (entry: Record<string, string>, id: string) => {
   // do something with the entry
