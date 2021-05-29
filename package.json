@@ -1,0 +1,27 @@
+{
+  "name": "@art-of-coding/use-stream",
+  "version": "0.0.1",
+  "description": "Use Redis Streams",
+  "main": "./dist/index.js",
+  "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
+  "homepage": "http://github.com/Art-of-Coding/use-stream",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Art-of-Coding/use-stream.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=15"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^4.27.3",
+    "redis-streams-manager": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/ioredis": "^4.26.4",
+    "@types/node": "^15.6.1"
+  }
+}
