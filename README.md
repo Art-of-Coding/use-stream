@@ -1,8 +1,11 @@
 # Use Redis Streams
 
+'Use' Redis streams for node.js.
+
 Inspired by `React` Hooks.
 
-Extracted from a personal project.
+Extracted from a personal project. It makes use of my other streams library,
+[redis-streams-manager](https://github.com/MichielvdVelde/redis-streams-manager).
 
 ## Install
 
@@ -11,6 +14,10 @@ npm i @art-of-coding/use-stream
 ```
 
 ## Example
+
+Every call to `useStream` creates a separate subscription,
+so you can use `unsubscribe()` when you're done locally
+without affecting other possible subscriptions.
 
 ```typescript
 import IORedis from 'ioredis'
