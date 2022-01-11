@@ -1,6 +1,6 @@
 {
   "name": "@art-of-coding/use-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use Redis Streams",
   "main": "./dist/index.js",
   "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
