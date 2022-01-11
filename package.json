@@ -16,12 +16,10 @@
     "node": ">=15"
   },
   "license": "MIT",
-  "dependencies": {
-    "ioredis": "^4.27.3",
-    "redis-streams-manager": "^2.1.0"
-  },
   "devDependencies": {
-    "@types/ioredis": "^4.26.4",
-    "@types/node": "^15.6.1"
+    "@types/node": "^17.0.8"
+  },
+  "dependencies": {
+    "redis-streams-manager": "^2.2.0"
   }
 }
